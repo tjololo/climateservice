@@ -9,7 +9,9 @@ import (
 )
 
 func ReturnTemperature(w http.ResponseWriter, r *http.Request) {
-	temp := feedreader.ReadLatestValue(os.Getenv("TEMPERATURE_FEED_NAME"))
+	feedName := os.Getenv("TEMPERATURE_FEED_NAME")
+	fmt.Printf("Reading feed: %s\n", feedName)
+	temp := feedreader.ReadLatestValue(feedName)
 	f, err := strconv.ParseFloat(temp, 64)
 	if err != nil {
 		fmt.Printf("unable to parse value to float. %s", err)

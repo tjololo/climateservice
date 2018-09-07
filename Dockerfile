@@ -4,5 +4,6 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux GO111MODULE=on go build .
 
 FROM scratch
+ENV SSL_CERT_DIR certs
 COPY --from=0 /go/src/github.com/tjololo/climateservice/climateservice .
 ENTRYPOINT ["/climateservice"]

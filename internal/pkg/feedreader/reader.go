@@ -12,7 +12,7 @@ func ReadLatestValue(feedName string) string {
 	client.BaseURL, _ = url.Parse("https://io.adafruit.com")
 	feed, _, ferr := client.Feed.Get(feedName)
 	if ferr != nil {
-		fmt.Printf("unable to load Feed with key %s", feedName)
+		fmt.Printf("unable to load Feed with key %s. %s", feedName, ferr)
 		return "N/A"
 	}
 	client.SetFeed(feed)

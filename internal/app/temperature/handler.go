@@ -18,3 +18,14 @@ func ReturnTemperature(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprintf(w, "Current temperature is: %.1f", f)
 }
+
+func ReturnHumidity(w http.ResponseWriter, r *http.Request) {
+	feedName := os.Getenv("HUMIDITY_FEED_NAME")
+	fmt.Printf("Reading feed: %s\n", feedName)
+	temp := feedreader.ReadLatestValue(feedName)
+	f, err := strconv.ParseFloat(temp, 64)
+	if err != nil {
+		fmt.Printf("unable to parse value to float. %s", err)
+	}
+	fmt.Fprintf(w, "Current humidity is: %.1f%%", f)
+}

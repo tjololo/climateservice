@@ -9,6 +9,8 @@ github.com/gorilla/mux v1.6.2 h1:Pgr17XVTNXAk3q/r4CpKzC5xBM/qW1uVLV+IhRZpIIk=
 github.com/gorilla/mux v1.6.2/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/sirupsen/logrus v1.0.6 h1:hcP1GmhGigz/O7h1WVUM5KklBp1JoNS9FggWKdj/j3s=
+github.com/sirupsen/logrus v1.0.6/go.mod h1:pMByvHTf9Beacp5x1UXfOR9xyW/9antXMhjMPG0dEzc=
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/tjololo/io-client-go v0.0.0-20180907223106-15a5cae0f43e h1:Cs8AylToSYCf+/me+VueK/HsnW8mwuJIjQ3QKaIGNO0=
@@ -17,3 +19,7 @@ github.com/tjololo/io-client-go v0.0.0-20180907223259-9457fd29e1bc h1:iH8mEOaHMd
 github.com/tjololo/io-client-go v0.0.0-20180907223259-9457fd29e1bc/go.mod h1:S7/84xT1/0uDg2RfCLrre/FjsUsUaKmZj3B6ygX75hE=
 github.com/tjololo/io-client-go v0.0.0-20180907223645-4122d3272b93 h1:cDT15zwGIDRuT0i+bv1tvVUr+Vc/ZrTGpNdevG1Ozxo=
 github.com/tjololo/io-client-go v0.0.0-20180907223645-4122d3272b93/go.mod h1:S7/84xT1/0uDg2RfCLrre/FjsUsUaKmZj3B6ygX75hE=
+golang.org/x/crypto v0.0.0-20180904163835-0709b304e793 h1:u+LnwYTOOW7Ukr/fppxEb1Nwz0AtPflrblfvUudpo+I=
+golang.org/x/crypto v0.0.0-20180904163835-0709b304e793/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
+golang.org/x/sys v0.0.0-20180909124046-d0be0721c37e h1:o3PsSEY8E4eXWkXrIP9YJALUkVZqzHJT5DOasTyn8Vs=
+golang.org/x/sys v0.0.0-20180909124046-d0be0721c37e/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
